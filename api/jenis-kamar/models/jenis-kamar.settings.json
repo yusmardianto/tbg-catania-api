@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jenis_kamars",
+  "info": {
+    "name": "JenisKamar",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namaKamar": {
+      "type": "string"
+    },
+    "hargaKamar": {
+      "type": "biginteger"
+    },
+    "jumlahKamar": {
+      "type": "biginteger"
+    },
+    "fasilitas_kamars": {
+      "via": "jenis_kamar",
+      "collection": "fasilitas-kamar"
+    },
+    "imgKamar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

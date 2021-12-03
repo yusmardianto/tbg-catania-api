@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fasilitas-kamars",
+      "handler": "fasilitas-kamar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fasilitas-kamars/count",
+      "handler": "fasilitas-kamar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fasilitas-kamars/:id",
+      "handler": "fasilitas-kamar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fasilitas-kamars",
+      "handler": "fasilitas-kamar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fasilitas-kamars/:id",
+      "handler": "fasilitas-kamar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fasilitas-kamars/:id",
+      "handler": "fasilitas-kamar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

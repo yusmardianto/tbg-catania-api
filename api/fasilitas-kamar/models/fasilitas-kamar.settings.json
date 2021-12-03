@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fasilitas_kamars",
+  "info": {
+    "name": "FasilitasKamar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "namaFasilitas": {
+      "type": "string"
+    },
+    "jenis_kamar": {
+      "via": "fasilitas_kamars",
+      "model": "jenis-kamar"
+    },
+    "hargaFasilitas": {
+      "type": "biginteger"
+    }
+  }
+}
