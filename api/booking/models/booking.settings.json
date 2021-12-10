@@ -50,6 +50,9 @@
     },
     "checkOut": {
       "type": "string"
+    },
+    "transactionID": {
+      "type": "string"
     }
   }
 }
